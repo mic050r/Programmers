@@ -3,13 +3,6 @@ class Solution {
     public int[] solution(int n, int m) {
         int[] answer = new int[2];
         int sum = n*m;
-        int tmp;
-        // m에 큰값 배치
-        // if(n > m){
-        //     tmp = m;
-        //     n = m;
-        //     m = n;
-        // }
         // 최대공약수 구하기
         while(n!=0){
             int r = m%n;
