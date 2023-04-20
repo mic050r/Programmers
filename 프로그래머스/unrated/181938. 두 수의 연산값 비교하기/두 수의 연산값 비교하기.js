@@ -1,6 +1,5 @@
 function solution(a, b) {
-    var answer = a.toString()+ b;
-    var sum = 2*a*b;
-    if(answer > sum) return Number(answer);
-    else return sum;
+    var sum1 = Number(a.toString()+ b.toString());
+    var sum2 = 2*a*b;
+    return sum1 > sum2 ?  sum1 : sum2;
 }
