@@ -1,10 +1,7 @@
 class Solution {
     public int solution(int[][] sizes) {
-        int answer = 0;
-        int temp = 0;
-        int maxW = 0;
-        int maxH = 0;
-        int max = 10001;
+        int answer = 0; int temp = 0;
+        int maxW = 0;int maxH = 0;
         // 더 큰 값을 가로에 넣기
         for(int i = 0; i < sizes.length; i++){
             if(sizes[i][0] < sizes[i][1]){
