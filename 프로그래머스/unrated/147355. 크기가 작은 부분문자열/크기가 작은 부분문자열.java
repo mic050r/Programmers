@@ -1,11 +1,12 @@
 class Solution {
     public int solution(String t, String p) {
-        int cnt = 0, i = 0;
-        int len = p.length();
-        for(i = 0; i < t.length()- len + 1; i++){
-            String str = t.substring(i, i + len);
-            if(Long.parseLong(str) <= Long.parseLong(p)) cnt++;
+        int answer = 0;
+        long ip = Long.parseLong(p);
+        for(int i=0;i <= t.length()-p.length();i++){
+            if(Long.parseLong(t.substring(i,i+p.length())) <= ip){
+                answer++;
+            }
         }
-        return cnt;
+        return answer;
     }
 }
