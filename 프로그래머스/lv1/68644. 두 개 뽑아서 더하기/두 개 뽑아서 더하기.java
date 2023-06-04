@@ -24,7 +24,7 @@ class Solution {
         int result[] = new int[answer.length-cnt];
         int rIndex = 0;
         result[0] = answer[0];
-        for(int i = 0; i< answer.length; i++){
+        for(int i = 1; i< answer.length; i++){
             if(result[rIndex] == answer[i])
                 continue;
             result[++rIndex] = answer[i];
