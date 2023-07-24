@@ -1,9 +1,3 @@
-function solution(n)
-{
-    var answer = 0;
-    n = n.toString();
-    for(let i of n){
-        answer += Number(i);
-    }
-    return answer;
+function solution(n){
+    return (n+"").split("").reduce((acc, curr) => acc + parseInt(curr), 0)
 }
