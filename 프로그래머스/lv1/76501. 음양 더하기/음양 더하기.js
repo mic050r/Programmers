@@ -1,7 +1,3 @@
 function solution(absolutes, signs) {
-    let sum = 0;
-    let answer = absolutes.map(function (trunc, i){
-        sum += trunc*(signs[i] ? 1 : -1)
-    })
-    return sum;
+    return absolutes.reduce((acc, val, i) => acc + (val * (signs[i] ? 1 : -1)), 0);
 }
