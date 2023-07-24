@@ -1,8 +1,7 @@
 function solution(absolutes, signs) {
     let sum = 0;
     let answer = absolutes.map(function (trunc, i){
-        if(signs[i]) sum += trunc;
-        else sum += (-1)*trunc;
+        sum += trunc*(signs[i] ? 1 : -1)
     })
     return sum;
 }
