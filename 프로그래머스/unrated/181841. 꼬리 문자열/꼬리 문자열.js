@@ -1,7 +1,6 @@
 function solution(str_list, ex) {
-    var answer = '';
-    for(let i of str_list){
-       i.includes(ex) ?  answer += "" : answer += i;
-    }
-    return answer;
+  return str_list.reduce((acc, cur) => {
+    if (cur.includes(ex)) return acc;
+    return acc + cur;
+  }, "");
 }
