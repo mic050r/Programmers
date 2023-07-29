@@ -1,8 +1,1 @@
-function solution(myString) {
-    var answer = '';
-    for(x of myString){
-        if(x < 'l') answer += 'l';
-        else answer += x;
-    }
-    return answer;
-}
+const solution = myString => myString.replace(/[a-k]/g,'l')
