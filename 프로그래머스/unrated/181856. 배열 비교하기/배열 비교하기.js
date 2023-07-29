@@ -1,14 +1,11 @@
-function solution(arr1, arr2) {
-    var answer = 0, sum1 = 0, sum2 = 0;
-    sum1 = arr1.reduce((acc,cal)=> acc+cal);
-    sum2 = arr2.reduce((acc,cal)=> acc+cal);
-    if(arr1.length !== arr2.length){
-        answer = arr1.length > arr2.length ? 1 : -1;
+const solution = (arr1, arr2) => {
+    return arr1.length !== arr2.length ? compare(arr1.length, arr2.length) : compare(arr1, arr2, "reduce");
+};
+
+const compare = (a, b, option) => {
+    if (option === "reduce") {
+        a = a.reduce((acc, cur) => acc + cur);
+        b = b.reduce((acc, cur) => acc + cur);
     }
-    else {
-        if(sum1 > sum2) answer = 1;
-        else if(sum2 > sum1) answer = -1;
-        else answer = 0;
-    }
-    return answer;
-}
+    return a > b ? 1 : a < b ? -1 : 0;
+};
