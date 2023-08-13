@@ -1,1 +1,4 @@
-const solution = (arr, dels) => arr.filter((el) => !dels.includes(el))
+function solution(arr, delete_list) {
+    var answer = [];
+    return arr.filter(e => !delete_list.includes(e));
+}
