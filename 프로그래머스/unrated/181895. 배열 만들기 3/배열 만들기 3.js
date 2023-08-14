@@ -1,5 +1,3 @@
-function solution(arr, intervals) {
-    const [[a,b],[c,d]] = intervals;
-
-    return [...arr.slice(a, b+1), ...arr.slice(c, d+1)];
-}
+const solution = (arr, [[s1, e1], [s2, e2]]) => (
+    [...arr.slice(s1, e1 + 1), ...arr.slice(s2, e2 + 1)]
+)
