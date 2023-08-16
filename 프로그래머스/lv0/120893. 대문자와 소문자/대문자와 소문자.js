@@ -1,5 +1,3 @@
 function solution(my_string) {
-    var answer = '';
-    for (let c of my_string) answer += c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase();
-    return answer;
+    return my_string.split('').map(n => n === n.toUpperCase() ? n.toLowerCase() : n.toUpperCase()).join('')
 }
