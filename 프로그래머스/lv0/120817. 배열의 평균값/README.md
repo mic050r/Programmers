@@ -1,10 +1,10 @@
 # [level 0] 배열의 평균값 - 120817 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120817) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120817?language=go) 
 
 ### 성능 요약
 
-메모리: 4.16 MB, 시간: 0.01 ms
+메모리: 4.13 MB, 시간: 0.00 ms
 
 ### 구분
 
