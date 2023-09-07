@@ -4,9 +4,12 @@
 
 // numbers_len은 배열 numbers의 길이입니다.
 double solution(int numbers[], size_t numbers_len) {
-    double total = 0;
-    for(int i = 0; i < numbers_len; i++){
-        total += numbers[i];
+    double answer = 0;
+    double a = 0;
+    for(int i=0; i<numbers_len; i++)
+    {
+        a += numbers[i];
     }
-    return total/numbers_len;
+        answer = a/numbers_len;
+    return answer;
 }
