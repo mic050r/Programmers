@@ -3,10 +3,7 @@ class Solution {
         StringBuilder answer = new StringBuilder();
         StringBuilder str = new StringBuilder(my_string);
         
-        if (s == e) {
-            return my_string;
-        }
-        
+ 
         answer.append(str.substring(0, s)) 
               .append((new StringBuilder(str.substring(s, e + 1)).reverse()))
               .append(str.substring(e + 1));
