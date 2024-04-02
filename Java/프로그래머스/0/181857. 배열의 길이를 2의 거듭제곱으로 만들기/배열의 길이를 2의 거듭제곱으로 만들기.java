@@ -2,10 +2,12 @@ import java.util.Arrays;
 
 class Solution {
     public int[] solution(int[] arr) {
-        int len = arr.length;
-        while((len & (len-1)) != 0) len++;
-        
-        int answer[] = Arrays.copyOf(arr, len);
-        return answer;
+       int length = 1;
+
+        while (length < arr.length) {
+            length *= 2;
+        }
+
+        return Arrays.copyOf(arr, length);
     }
 }
