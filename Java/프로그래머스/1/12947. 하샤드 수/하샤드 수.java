@@ -9,6 +9,6 @@ class Solution {
         }
         
         // 2. 자릿수의 합이 x와 나누어 떨어지는지
-        return (x % sum == 0) ? true : false;
+        return (x % sum == 0);
     }
 }
