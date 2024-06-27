@@ -1,8 +1,7 @@
-SELECT name
-FROM 
-(
-    SELECT name
-    FROM animal_ins
-    ORDER BY datetime
-)
-WHERE rownum = 1
+SELECT  NAME
+FROM    ANIMAL_INS
+WHERE   DATETIME = (
+            --가장 먼저 들어온 => DATETIME의 최솟값
+            SELECT  MIN(DATETIME)
+            FROM    ANIMAL_INS
+        )
