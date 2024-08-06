@@ -1,11 +1,12 @@
 class Solution {
     public int solution(int n) {
-        int i = 0;
+        int answer = 1;
+
         while(true) {
-            i = i+1;
-            if(n%i == 1) break;
+            if(n % answer == 1) break;
+            answer++;
         }
-        
-        return i;
+
+        return answer;
     }
 }
